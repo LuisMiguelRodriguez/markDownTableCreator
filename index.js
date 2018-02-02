@@ -1,3 +1,12 @@
+import { ENGINE_METHOD_CIPHERS } from "constants";
+
+// Used to print directories files or folders as a list
+// cmd
+// dir / b > print.txt grab
+
+// prints out timestamp of creation 
+// dir > print.txt
+
 var fs = require("fs");
 var path = require("path");
 
@@ -52,12 +61,6 @@ for (var i = 0; i < newArray.length; i++) {
   finishedArray.push(newArray[i].slice(3));
 }
 
-// var bigString = newArray.join("");
-
-// console.log(bigString)
-
-// console.log(finishedArray);
-
 var linkArray = [];
 
 // created object to hold both project names
@@ -75,7 +78,7 @@ var linkArray = [];
 
 // seperating large array into 3 
 // which represent each day of class
-// for the week
+// for the weak
 var day1 = newArray.slice(1, 7);
 console.log(day1);
 
@@ -90,13 +93,9 @@ console.log(day3);
 
 function createTable(arr1, arr2, arr3, unit) {
 
-  console.log(arr1);
-  console.log(arr2);
-  console.log(arr3);
-  console.log(unit);
-
   // Grab folder name to create a file path
   var folderName = '05-timers'
+  var weekNum = '05'
 
   // compare each day to see what the
   // height of the table will be
@@ -104,11 +103,9 @@ function createTable(arr1, arr2, arr3, unit) {
 
   // var to hold completed string
   // initialized with table header data
-  var longString =
-    "## Unit 5 - JavaScript / jQuery Review, Timers, & Debugger \n";
-  longString +=
-    "Day # 1 Activities|Day # 2 Activities|Day #3 Activities|Homework|Videos|\n";
-  longString += "|---|---|---|---|---|\n";
+  var template = `## Unit 5 - JavaScript / jQuery Review, Timers, & Debugger\n`
+  template += `Day # 1 Activities|Day # 2 Activities|Day #3 Activities|Homework|Videos|\n`
+  template += `|---|---|---|---|---|\n`
 
   // loop that will repeat as many times as the highest day
   // with activities which sets the height
@@ -127,15 +124,24 @@ function createTable(arr1, arr2, arr3, unit) {
     var arrLink3 = arr3[i] ? arr3[i] : "---";
 
 
-    longString += `|[${arrName1}](01-Class-Content/${folderName}/01-Activities/${arrLink1})`
-    longString += `|[${arrName2}](01-Class-Content/${folderName}/01-Activities/${arrLink2})`
-    longString += `|[${arrName3}](01-Class-Content/${folderName}/01-Activities/${arrLink3})|---|---|\n`
+    template += `|[${arrName1}](01-Class-Content/${folderName}/01-Activities/${arrLink1})`
+    template += `|[${arrName2}](01-Class-Content/${folderName}/01-Activities/${arrLink2})`
+    template += `|[${arrName3}](01-Class-Content/${folderName}/01-Activities/${arrLink3})|`
 
-    console.log(longString);
+    // checks whether or not its the first line of the table to add ENGINE_METHOD_CIPHERS
+    // the homework and video or blanks space
+    if (i === 0) {
+      template += `[Homework](01-Class-Content/${folderName}/02-Homework/Instructions)|`
+      template += `[Video Guides Week ${weekNum}](02-lesson-plans/part-time/${weekNum}-Week/VideoGuide.md)|\n`
+    } else {
+      template += `---|---|\n`
+    }
+
+    console.log(template);
 
   }
 
-  fs.appendFile("pleaseWork.txt", longString, function (err) {
+  fs.appendFile("pleaseWork.txt", template, function (err) {
     if (err) throw err
     console.log("Saved!")
   });
