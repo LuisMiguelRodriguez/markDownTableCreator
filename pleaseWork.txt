@@ -1,112 +1,13 @@
 ## Unit 5 - JavaScript / jQuery Review, Timers, & Debugger 
 Day # 1 Activities|Day # 2 Activities|Day #3 Activities|Homework|Videos|
 |---|---|---|---|---|
-|[01-Hangman
-](01-Class-Content/02-css-bootstrap/01-Activities/01-Hangman
-)||[01-Hangman
-](01-Class-Content/02-css-bootstrap/01-Activities/01-Hangman
-)||[02-CaptainPlanet 
-](01-Class-Content/02-css-bootstrap/01-Activities/02-CaptainPlanet 
-)||[02-CaptainPlanet 
-](01-Class-Content/02-css-bootstrap/01-Activities/02-CaptainPlanet 
-)|[08-SimpleTimer 
-](01-Class-Content/02-css-bootstrap/01-Activities/08-SimpleTimer 
-)|[16-FizzBuzz 
-]|[03-LotteryGenerator 
-](01-Class-Content/02-css-bootstrap/01-Activities/03-LotteryGenerator 
-)|[09-Interval 
-](01-Class-Content/02-css-bootstrap/01-Activities/09-Interval 
-)|[17-FloatsBoxModel 
-]|[03-LotteryGenerator 
-](01-Class-Content/02-css-bootstrap/01-Activities/03-LotteryGenerator 
-)||[04-CoinFlip 
-](01-Class-Content/02-css-bootstrap/01-Activities/04-CoinFlip 
-)|[10-Stopwatch 
-](01-Class-Content/02-css-bootstrap/01-Activities/10-Stopwatch 
-)|[18-GitGitHub 
-]|[04-CoinFlip 
-](01-Class-Content/02-css-bootstrap/01-Activities/04-CoinFlip 
-)|[07-Context 
-](01-Class-Content/02-css-bootstrap/01-Activities/07-Context 
-)|[15-FileExtension 
-][11-Slideshow 
-](01-Class-Content/02-css-bootstrap/01-Activities/11-Slideshow 
-)|[19-IsPangram 
-]|[05-This 
-](01-Class-Content/02-css-bootstrap/01-Activities/05-This 
-)||[06-Timeout 
-](01-Class-Content/02-css-bootstrap/01-Activities/06-Timeout 
-)||[06-Timeout 
-](01-Class-Content/02-css-bootstrap/01-Activities/06-Timeout 
-)|[12-Bash 
-](01-Class-Content/02-css-bootstrap/01-Activities/12-Bash 
-)|[20-jQueryToDo 
-]|[---](01-Class-Content/02-css-bootstrap/01-Activities/---)||[05-This 
-](01-Class-Content/02-css-bootstrap/01-Activities/05-This 
-)|[13-BubbleSort 
-](01-Class-Content/02-css-bootstrap/01-Activities/13-BubbleSort 
-)|[21-MediaQueries 
-]|[---](01-Class-Content/02-css-bootstrap/01-Activities/---)||[---](01-Class-Content/02-css-bootstrap/01-Activities/---)||[---](01-Class-Content/02-css-bootstrap/01-Activities/---)|[---](01-Class-Content/02-css-bootstrap/01-Activities/---)|[23-PrimeChecker 
-][14-BuyLowSellHigh 
-](01-Class-Content/02-css-bootstrap/01-Activities/14-BuyLowSellHigh 
-)|[22-PalindromeDetector 
-]|[---](01-Class-Content/02-css-bootstrap/01-Activities/---)||[---](01-Class-Content/02-css-bootstrap/01-Activities/---)||[---](01-Class-Content/02-css-bootstrap/01-Activities/---)|[---](01-Class-Content/02-css-bootstrap/01-Activities/---)|[24-RecursiveFibonacci 
-]|[---](01-Class-Content/02-css-bootstrap/01-Activities/---)|## Unit 5 - JavaScript / jQuery Review, Timers, & Debugger 
-Day # 1 Activities|Day # 2 Activities|Day #3 Activities|Homework|Videos|
-|---|---|---|---|---|
-[07-Context 
-](01-Class-Content/02-css-bootstrap/01-Activities/07-Context 
-)|[15-FileExtension 
-]|[01-Hangman
-](01-Class-Content/02-css-bootstrap/01-Activities/01-Hangman
-)||[01-Hangman
-](01-Class-Content/02-css-bootstrap/01-Activities/01-Hangman
-)|[08-SimpleTimer 
-](01-Class-Content/02-css-bootstrap/01-Activities/08-SimpleTimer 
-)|[16-FizzBuzz 
-]|[02-CaptainPlanet 
-](01-Class-Content/02-css-bootstrap/01-Activities/02-CaptainPlanet 
-)||[03-LotteryGenerator 
-](01-Class-Content/02-css-bootstrap/01-Activities/03-LotteryGenerator 
-)||[02-CaptainPlanet 
-](01-Class-Content/02-css-bootstrap/01-Activities/02-CaptainPlanet 
-)|[09-Interval 
-](01-Class-Content/02-css-bootstrap/01-Activities/09-Interval 
-)|[17-FloatsBoxModel 
-]|[03-LotteryGenerator 
-](01-Class-Content/02-css-bootstrap/01-Activities/03-LotteryGenerator 
-)||[04-CoinFlip 
-](01-Class-Content/02-css-bootstrap/01-Activities/04-CoinFlip 
-)|[10-Stopwatch 
-](01-Class-Content/02-css-bootstrap/01-Activities/10-Stopwatch 
-)|[18-GitGitHub 
-]|[04-CoinFlip 
-](01-Class-Content/02-css-bootstrap/01-Activities/04-CoinFlip 
-)||[05-This 
-](01-Class-Content/02-css-bootstrap/01-Activities/05-This 
-)|[11-Slideshow 
-](01-Class-Content/02-css-bootstrap/01-Activities/11-Slideshow 
-)|[19-IsPangram 
-]|[05-This 
-](01-Class-Content/02-css-bootstrap/01-Activities/05-This 
-)||[06-Timeout 
-](01-Class-Content/02-css-bootstrap/01-Activities/06-Timeout 
-)|[12-Bash 
-](01-Class-Content/02-css-bootstrap/01-Activities/12-Bash 
-)|[20-jQueryToDo 
-]|[---](01-Class-Content/02-css-bootstrap/01-Activities/---)|[13-BubbleSort 
-](01-Class-Content/02-css-bootstrap/01-Activities/13-BubbleSort 
-)|[21-MediaQueries 
-]|[---](01-Class-Content/02-css-bootstrap/01-Activities/---)|[14-BuyLowSellHigh 
-](01-Class-Content/02-css-bootstrap/01-Activities/14-BuyLowSellHigh 
-)|[22-PalindromeDetector 
-]|[---](01-Class-Content/02-css-bootstrap/01-Activities/---)||[06-Timeout 
-](01-Class-Content/02-css-bootstrap/01-Activities/06-Timeout 
-)||[---](01-Class-Content/02-css-bootstrap/01-Activities/---)||[---](01-Class-Content/02-css-bootstrap/01-Activities/---)|[---](01-Class-Content/02-css-bootstrap/01-Activities/---)|[23-PrimeChecker 
-]|[---](01-Class-Content/02-css-bootstrap/01-Activities/---)||[---](01-Class-Content/02-css-bootstrap/01-Activities/---)||[---](01-Class-Content/02-css-bootstrap/01-Activities/---)|[---](01-Class-Content/02-css-bootstrap/01-Activities/---)|[24-RecursiveFibonacci 
-]## Unit 5 - JavaScript / jQuery Review, Timers, & Debugger 
-Day # 1 Activities|Day # 2 Activities|Day #3 Activities|Homework|Videos|
-|---|---|---|---|---|
-|[01-Hangman](01-Class-Content/02-css-bootstrap/01-Activities/01-Hangman)|[07-Context ](01-Class-Content/02-css-bootstrap/01-Activities/07-Context )|[15-FileExtension ]|[01-Hangman](01-Class-Content/02-css-bootstrap/01-Activities/01-Hangman)||[02-CaptainPlanet ](01-Class-Content/02-css-bootstrap/01-Activities/02-CaptainPlanet )|[08-SimpleTimer ](01-Class-Content/02-css-bootstrap/01-Activities/08-SimpleTimer )|[16-FizzBuzz ]|[03-LotteryGenerator ](01-Class-Content/02-css-bootstrap/01-Activities/03-LotteryGenerator )||[02-CaptainPlanet ](01-Class-Content/02-css-bootstrap/01-Activities/02-CaptainPlanet )||[03-LotteryGenerator ](01-Class-Content/02-css-bootstrap/01-Activities/03-LotteryGenerator )|[09-Interval ](01-Class-Content/02-css-bootstrap/01-Activities/09-Interval )|[17-FloatsBoxModel ]|[04-CoinFlip ](01-Class-Content/02-css-bootstrap/01-Activities/04-CoinFlip )|[10-Stopwatch ](01-Class-Content/02-css-bootstrap/01-Activities/10-Stopwatch )|[18-GitGitHub ]|[04-CoinFlip ](01-Class-Content/02-css-bootstrap/01-Activities/04-CoinFlip )||[05-This ](01-Class-Content/02-css-bootstrap/01-Activities/05-This )|[11-Slideshow ](01-Class-Content/02-css-bootstrap/01-Activities/11-Slideshow )|[19-IsPangram ]|[05-This ](01-Class-Content/02-css-bootstrap/01-Activities/05-This )||[06-Timeout ](01-Class-Content/02-css-bootstrap/01-Activities/06-Timeout )|[12-Bash ](01-Class-Content/02-css-bootstrap/01-Activities/12-Bash )|[20-jQueryToDo ]|[06-Timeout ](01-Class-Content/02-css-bootstrap/01-Activities/06-Timeout )||[---](01-Class-Content/02-css-bootstrap/01-Activities/---)|[13-BubbleSort ](01-Class-Content/02-css-bootstrap/01-Activities/13-BubbleSort )|[21-MediaQueries ]|[---](01-Class-Content/02-css-bootstrap/01-Activities/---)|[14-BuyLowSellHigh ](01-Class-Content/02-css-bootstrap/01-Activities/14-BuyLowSellHigh )|[22-PalindromeDetector ]|[---](01-Class-Content/02-css-bootstrap/01-Activities/---)||[---](01-Class-Content/02-css-bootstrap/01-Activities/---)||[---](01-Class-Content/02-css-bootstrap/01-Activities/---)|[---](01-Class-Content/02-css-bootstrap/01-Activities/---)|[23-PrimeChecker ]|[---](01-Class-Content/02-css-bootstrap/01-Activities/---)||[---](01-Class-Content/02-css-bootstrap/01-Activities/---)|[---](01-Class-Content/02-css-bootstrap/01-Activities/---)|[24-RecursiveFibonacci ]|[---](01-Class-Content/02-css-bootstrap/01-Activities/---)|## Unit 5 - JavaScript / jQuery Review, Timers, & Debugger 
-Day # 1 Activities|Day # 2 Activities|Day #3 Activities|Homework|Videos|
-|---|---|---|---|---|
+|[01-Hangman](01-Class-Content/05-timers/01-Activities/01-Hangman)|[07-Context ](01-Class-Content/05-timers/01-Activities/07-Context )|[15-FileExtension ](01-Class-Content/05-timers/01-Activities/15-FileExtension )|---|---|
+|[02-CaptainPlanet ](01-Class-Content/05-timers/01-Activities/02-CaptainPlanet )|[08-SimpleTimer ](01-Class-Content/05-timers/01-Activities/08-SimpleTimer )|[16-FizzBuzz ](01-Class-Content/05-timers/01-Activities/16-FizzBuzz )|---|---|
+|[03-LotteryGenerator ](01-Class-Content/05-timers/01-Activities/03-LotteryGenerator )|[09-Interval ](01-Class-Content/05-timers/01-Activities/09-Interval )|[17-FloatsBoxModel ](01-Class-Content/05-timers/01-Activities/17-FloatsBoxModel )|---|---|
+|[04-CoinFlip ](01-Class-Content/05-timers/01-Activities/04-CoinFlip )|[10-Stopwatch ](01-Class-Content/05-timers/01-Activities/10-Stopwatch )|[18-GitGitHub ](01-Class-Content/05-timers/01-Activities/18-GitGitHub )|---|---|
+|[05-This ](01-Class-Content/05-timers/01-Activities/05-This )|[11-Slideshow ](01-Class-Content/05-timers/01-Activities/11-Slideshow )|[19-IsPangram ](01-Class-Content/05-timers/01-Activities/19-IsPangram )|---|---|
+|[06-Timeout ](01-Class-Content/05-timers/01-Activities/06-Timeout )|[12-Bash ](01-Class-Content/05-timers/01-Activities/12-Bash )|[20-jQueryToDo ](01-Class-Content/05-timers/01-Activities/20-jQueryToDo )|---|---|
+|[---](01-Class-Content/05-timers/01-Activities/---)|[13-BubbleSort ](01-Class-Content/05-timers/01-Activities/13-BubbleSort )|[21-MediaQueries ](01-Class-Content/05-timers/01-Activities/21-MediaQueries )|---|---|
+|[---](01-Class-Content/05-timers/01-Activities/---)|[14-BuyLowSellHigh ](01-Class-Content/05-timers/01-Activities/14-BuyLowSellHigh )|[22-PalindromeDetector ](01-Class-Content/05-timers/01-Activities/22-PalindromeDetector )|---|---|
+|[---](01-Class-Content/05-timers/01-Activities/---)|[---](01-Class-Content/05-timers/01-Activities/---)|[23-PrimeChecker ](01-Class-Content/05-timers/01-Activities/23-PrimeChecker )|---|---|
+|[---](01-Class-Content/05-timers/01-Activities/---)|[---](01-Class-Content/05-timers/01-Activities/---)|[24-RecursiveFibonacci ](01-Class-Content/05-timers/01-Activities/24-RecursiveFibonacci )|---|---|
