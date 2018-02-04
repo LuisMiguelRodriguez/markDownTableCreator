@@ -1,4 +1,4 @@
-import { ENGINE_METHOD_CIPHERS } from "constants";
+
 
 // Used to print directories files or folders as a list
 // cmd
@@ -87,9 +87,6 @@ console.log(day2);
 
 var day3 = newArray.slice(15, 25);
 console.log(day3);
-
-
-// (01-Class-Content/02-css-bootstrap/01-Activities/${link})
 
 function createTable(arr1, arr2, arr3, unit) {
 
