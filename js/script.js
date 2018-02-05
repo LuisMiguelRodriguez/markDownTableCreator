@@ -4,7 +4,7 @@ var rawText = `
 03-javascript
 04-jquery
 05-timers
-06-ajax
+06-aja
 07-firebase
 10-nodejs
 11-js-constructors
@@ -20,12 +20,37 @@ var rawText = `
 22-computer-science
 23-other-languages
 `
+var title = [
+    "## Unit 1 - Intro to Web Development, HTML / CSS, and Git",
+    "## Unit 2 - Github Pages Deployments and Bootstrap",
+    "## Unit 3 - Intro to JavaScript",
+    "## Unit 4 - Intro to jQuery",
+    "## Unit 5 - JavaScript / jQuery Review, Timers, & Debugger",
+    "## Unit 6 - Introduction to APIs and AJAX",
+    "## Unit 7 - Data Persistence with Local and Server Storage",
+    "## Unit 8 - Project #1 - Week 1",
+    "## Week 9 - API Project Week 2",
+    "## Unit 10 - Introduction to Node and NPM",
+    "## Unit 11 - Intro to Constructors and Callbacks",
+    "## Unit 12 - Intro to MySQL",
+    "## Unit 13 - Intro to Express",
+    "## Week 14 - Node, Express, and Handlebars",
+    "## Week 15 - Sequelized",
+    "## Week 16 - Introduction to Testing",
+    "## Week 17 - API Project Week 2 + Interview Questions",
+    "## Week 18 - Introduction to MongoDB",
+    "## Week 19 - React",
+    "## Week 20 - React Continued",
+    "## Week 21 - Regional Content",
+    "## Week 22 - Computer Science",
+    "## Unit 23 - Portfolios and Projects"]
 
-var activities = [
-    "01-CustomerObject", "02-Ajax_OMDB", "03-AJAX_to_HTML", "04-Giphy_API",
-    "05-Bujumbura", "06-MovieJSONDump", "07-MovieButtonLayout", "08-LogMovieName",
-    "09-ClickJSON", "10-WorkingMovieApp", "11-BandsInTownApp", "12-CatButton",
-    "13-ButtonTriggeredAJAX", "14-DynamicElements", "15-PausingGifs", "16-NYTSearch"]
+
+// var activities = [
+//     "01-CustomerObject", "02-Ajax_OMDB", "03-AJAX_to_HTML", "04-Giphy_API",
+//     "05-Bujumbura", "06-MovieJSONDump", "07-MovieButtonLayout", "08-LogMovieName",
+//     "09-ClickJSON", "10-WorkingMovieApp", "11-BandsInTownApp", "12-CatButton",
+//     "13-ButtonTriggeredAJAX", "14-DynamicElements", "15-PausingGifs", "16-NYTSearch"]
 
 // created array that holds all project name with numbers
 // Using split to seperate unwanted text
@@ -93,7 +118,7 @@ $('#submit').on("click", function (event) {
         .text()
     var d1 = parseInt(day1)
 
-    var arr1 = activities.slice(0, d1)
+    var arr1 = activities[weekName].slice(0, d1)
 
     var day2 = $('#selectDay2 option:selected')
         .text()
@@ -105,8 +130,8 @@ $('#submit').on("click", function (event) {
     console.log('value of day 1 ' + day1)
     console.log('value of day 2 ' + day2)
 
-    var arr2 = activities.slice(d1, d2 + d1)
-    var arr3 = activities.slice(d2 + d1)
+    var arr2 = activities[weekName].slice(d1, d2 + d1)
+    var arr3 = activities[weekName].slice(d2 + d1)
 
     createTable(weekName, weekNum, arr1, arr2, arr3)
 })
@@ -122,7 +147,7 @@ function createTable(weekName, weekNum, arr1, arr2, arr3, unit) {
 
     // var to hold completed string
     // initialized with table header data
-    var template = `## Unit 5 - JavaScript / jQuery Review, Timers, & Debugger\n`
+    var template = title[weekNum - 1]
     template += `Day # 1 Activities|Day # 2 Activities|Day #3 Activities|Homework|Videos|\n`
     template += `|---|---|---|---|---|\n`
 

@@ -1,6 +1,7 @@
 body {
   background: #f39c12;
   display: flex;
+  margin: 0 auto;
 }
 /* 
 .center-on-page {
