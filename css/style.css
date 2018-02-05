@@ -1,5 +1,5 @@
 body {
-  background: #f39c12;
+  background: #616d83;
   display: flex;
   margin: 0 auto;
 }
@@ -14,6 +14,12 @@ body {
 h1 {
   text-align: center;
 }
+/*  */
+.container-fluid {
+    display: flex;
+    margin-top: 100px;
+}
+
 /* Reset Select */
 select {
   -webkit-appearance: none;
@@ -75,7 +81,7 @@ select::-ms-expand {
 }
 
 #container {
-  width:40%;
+  width:500px;
   border:black solid 5px;
   border-radius:10px;
   padding: 10px;
@@ -98,6 +104,11 @@ select::-ms-expand {
   background-color:#2c3e50;
   border:none;
   height:50px;
-  color:white;
-  
+  color:white;  
+  margin-top: 39px;
+}
+
+#markDown {
+  width:500px;
+  margin-left:50px;
 }

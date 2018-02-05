@@ -56,7 +56,7 @@ var title = [
 // Using split to seperate unwanted text
 var arrSection = rawText.split("\n");
 
-var sectionTemplate = '<select name="slct" id="selectSection"><option>Section to Choose</option>'
+var sectionTemplate = '<select name="slct" id="selectSection"><option>Select Week</option>'
 
 //Create list of options for selector 
 for (var i of arrSection) {
@@ -71,7 +71,7 @@ sectionTemplate += '</select>'
 $('#selectSection').html(sectionTemplate)
 
 
-var selectDay1 = '<select id="selectDay1" name="day1"  required><option>#</option>'
+var selectDay1 = '<select id="selectDay1" class="my-1 mr-2" name="day1"  required><option>#</option>'
 
 for (var i = 1; i < 16; i++) {
 
@@ -96,17 +96,17 @@ selectDay2 += '</select>'
 
 $('#selectDay2').html(selectDay2)
 
-var selectDay3 = '<select id="selectDay3 name="day3" "required><option>#</option>'
+// var selectDay3 = '<select id="selectDay3 name="day3" "required><option>#</option>'
 
-for (var i = 1; i < 16; i++) {
+// for (var i = 1; i < 16; i++) {
 
-    selectDay3 += `<option value="${i}">${i}</option>`
+//     selectDay3 += `<option value="${i}">${i}</option>`
 
-}
+// }
 
-selectDay3 += '</select>'
+// selectDay3 += '</select>'
 
-$('#selectDay3').html(selectDay3)
+// $('#selectDay3').html(selectDay3)
 
 $('#submit').on("click", function (event) {
     event.preventDefault()
@@ -147,7 +147,9 @@ function createTable(weekName, weekNum, arr1, arr2, arr3, unit) {
 
     // var to hold completed string
     // initialized with table header data
+
     var template = title[weekNum - 1]
+    template += '\n'
     template += `Day # 1 Activities|Day # 2 Activities|Day #3 Activities|Homework|Videos|\n`
     template += `|---|---|---|---|---|\n`
 
