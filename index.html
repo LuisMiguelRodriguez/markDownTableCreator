@@ -45,34 +45,41 @@
 
     <div class="container-fluid">
 
-        <div id="container" class="center-on-page">
-            <form>
-                <h2>Select Week</h2>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div id="container" class="center-on-page">
+                    <form>
+                        <h2>Select Week</h2>
 
-                <div id="selectSection" class="select">
+                        <div id="selectSection" class="select">
+                        </div>
+
+                        <div class="">
+                            <h4>Select # of Activties for Day 1</h4>
+                            <div id="selectDay1" class="select"></div>
+                        </div>
+                        <div class="">
+                            <h4>Select # of Activties for Day 2</h4>
+                            <div id="selectDay2" class="select"></div>
+                        </div>
+                        <button id="submit" type="submit">Submit</button>
+                        <br/>
+                    </form>
                 </div>
 
-                <div class="">
-                    <h4>Select # of Activties for Day 1</h4>
-                    <div id="selectDay1" class="select"></div>
-                </div>
-                <div class="">
-                    <h4>Select # of Activties for Day 2</h4>
-                    <div id="selectDay2" class="select"></div>
-                </div>
-                <button id="submit" type="submit">Submit</button>
-                <br/>
-            </form>
-        </div>
-
-        <div id="markDown">
-
-            <div>
-                <textarea id="results" rows="20" cols="80"></textarea>
-                <button class="btn btn-primary" onclick="myFunction()">Copy text</button>
-                <a class="btn btn-success" target="_blank" href="https://stackedit.io/app">Test At StackEdit.io</a>
             </div>
+            <div class="col-md-6 col-sm-12">
+                <div id="markDown">
 
+                    <div>
+                        <textarea id="results"></textarea>
+                        <button class="btn btn-primary" onclick="myFunction()">Copy text</button>
+                        <a class="btn btn-success" target="_blank" href="https://stackedit.io/app">Test At StackEdit.io</a>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
 
 
