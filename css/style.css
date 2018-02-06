@@ -16,7 +16,7 @@ h1 {
 }
 /*  */
 .container-fluid {
-    display: flex;
+    
     margin-top: 100px;
     max-width:960px;
 }

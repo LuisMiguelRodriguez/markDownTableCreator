@@ -57,19 +57,35 @@ var title = [
 var arrSection = rawText.split("\n");
 
 var sectionTemplate = '<select name="slct" id="selectSection"><option>Select Week</option>'
+var sectionTemplate2 = '<select name="slct" id="selectWeek"><option>Select Week</option>'
 
 //Create list of options for selector 
 for (var i of arrSection) {
 
     sectionTemplate += `<option value="${i}">${i}</option>`
+    sectionTemplate2 += `<option value="${i}">${i}</option>`
 
 }
 
+
+
 sectionTemplate += '</select>'
+sectionTemplate2 += '</select>'
 
 
 $('#selectSection').html(sectionTemplate)
+$('#select-week').html(sectionTemplate2)
 
+// create option list of all activites
+var selectWeek = '<select id="selectWeek" class="my-1 mr-2" name="selectWeek"  required><option>#</option>'
+
+// for(var property in activities){
+
+//     for(var i = 0; i < property.length){
+
+//     }
+//     selectWeek += `<option value="${i}>${i}</option`
+// }
 
 var selectDay1 = '<select id="selectDay1" class="my-1 mr-2" name="day1"  required><option>#</option>'
 
@@ -79,6 +95,7 @@ for (var i = 1; i < 16; i++) {
 
 }
 
+selectWeek += '</select>'
 
 selectDay1 += '</select>'
 
@@ -96,19 +113,10 @@ selectDay2 += '</select>'
 
 $('#selectDay2').html(selectDay2)
 
-// var selectDay3 = '<select id="selectDay3 name="day3" "required><option>#</option>'
 
-// for (var i = 1; i < 16; i++) {
 
-//     selectDay3 += `<option value="${i}">${i}</option>`
 
-// }
-
-// selectDay3 += '</select>'
-
-// $('#selectDay3').html(selectDay3)
-
-$('#submit').on("click", function (event) {
+$('#submit-1').on("click", function (event) {
     event.preventDefault()
     var weekName = $('#selectSection option:selected')
         .text()
@@ -135,6 +143,22 @@ $('#submit').on("click", function (event) {
 
     createTable(weekName, weekNum, arr1, arr2, arr3)
 })
+
+$('#submit-2').on("click", function (event) {
+    event.preventDefault()
+    var weekName = $('#select-week option:selected')
+        .text()
+
+    var arr1 = activities[weekName]
+
+    createMarkdown(weekName, weekNum, arr1, arr2, arr3)
+})
+
+$(document).on('change', '#selectWeek', function (event) {
+    console.log('blah')
+    console.log(event)
+
+});
 
 
 
