@@ -46,38 +46,33 @@ var title = [
     "## Unit 23 - Portfolios and Projects"]
 
 
-// var activities = [
-//     "01-CustomerObject", "02-Ajax_OMDB", "03-AJAX_to_HTML", "04-Giphy_API",
-//     "05-Bujumbura", "06-MovieJSONDump", "07-MovieButtonLayout", "08-LogMovieName",
-//     "09-ClickJSON", "10-WorkingMovieApp", "11-BandsInTownApp", "12-CatButton",
-//     "13-ButtonTriggeredAJAX", "14-DynamicElements", "15-PausingGifs", "16-NYTSearch"]
-
 // created array that holds all project name with numbers
 // Using split to seperate unwanted text
 var arrSection = rawText.split("\n");
 
 var sectionTemplate = '<select name="slct" id="selectSection"><option>Select Week</option>'
-var sectionTemplate2 = '<select name="slct" id="selectWeek"><option>Select Week</option>'
+// var sectionTemplate2 = '<select name="slct" id="selectWeek"><option>Select Week</option>'
 
 //Create list of options for selector 
 for (var i of arrSection) {
 
     sectionTemplate += `<option value="${i}">${i}</option>`
-    sectionTemplate2 += `<option value="${i}">${i}</option>`
+
 
 }
 
-
+// for (property in activities) {
+//     sectionTemplate2 += `<option value="${property}">${property}</option>`
+// }
 
 sectionTemplate += '</select>'
-sectionTemplate2 += '</select>'
-
+// sectionTemplate2 += '</select>'
 
 $('#selectSection').html(sectionTemplate)
-$('#select-week').html(sectionTemplate2)
+// $('#select-week').html(sectionTemplate2)
 
-// create option list of all activites
-var selectWeek = '<select id="selectWeek" class="my-1 mr-2" name="selectWeek"  required><option>#</option>'
+// // create option list of all activites
+// var selectWeek = '<select id="selectWeek" class="my-1 mr-2" name="selectWeek"  required><option>#</option>'
 
 // for(var property in activities){
 
@@ -89,27 +84,22 @@ var selectWeek = '<select id="selectWeek" class="my-1 mr-2" name="selectWeek"  r
 
 var selectDay1 = '<select id="selectDay1" class="my-1 mr-2" name="day1"  required><option>#</option>'
 
-for (var i = 1; i < 16; i++) {
-
-    selectDay1 += `<option value="${i}">${i}</option>`
-
-}
-
-selectWeek += '</select>'
-
-selectDay1 += '</select>'
-
-$('#selectDay1').html(selectDay1)
-
 var selectDay2 = '<select id="selectDay2"" name="day2" required><option>#</option>'
 
 for (var i = 1; i < 16; i++) {
 
-    selectDay2 += `<option value="${i}">${i}</option>`
+    selectDay1 += `<option value="${i}">${i}</option>`
 
+    selectDay2 += `<option value="${i}">${i}</option>`
 }
 
+// selectWeek += '</select>'
+
+selectDay1 += '</select>'
 selectDay2 += '</select>'
+
+$('#selectDay1').html(selectDay1)
+
 
 $('#selectDay2').html(selectDay2)
 
@@ -120,6 +110,8 @@ $('#submit-1').on("click", function (event) {
     event.preventDefault()
     var weekName = $('#selectSection option:selected')
         .text()
+    console.log(weekName);
+
     var weekNum = weekName.slice(0, 2)
 
     var day1 = $('#selectDay1 option:selected')
@@ -154,11 +146,29 @@ $('#submit-2').on("click", function (event) {
     createMarkdown(weekName, weekNum, arr1, arr2, arr3)
 })
 
-$(document).on('change', '#selectWeek', function (event) {
-    console.log('blah')
-    console.log(event)
+// $(document).on('change', '#selectWeek', function (event) {
+//     console.log('blah')
+//     var weekName = $('#selectWeek option:selected').text()
 
-});
+//     console.log(weekName)
+//     var tempArr = []
+//     var sectionTemplate = '<select name="slct" id="selectWeek"><option>Select Week</option>'
+//     for (var i = 0; i < activities[weekName].length; i++) {
+
+//         tempArr.push(activities[weekName][i])
+
+//     }
+
+//     for (var i = 0; i < tempArr.length; i++) {
+
+//         sectionTemplate += `<option value="${tempArr[i]}">${tempArr[i]}</option>`
+//     }
+
+//     sectionTemplate += `</select`
+
+//     $('#selectActivity').html(sectionTemplate);
+
+// });
 
 
 
