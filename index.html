@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 </head>
 
 <body>
@@ -73,7 +74,7 @@
 
                     <div>
                         <textarea id="results"></textarea>
-                        <button class="btn btn-primary" onclick="myFunction()">Copy text</button>
+                        <button class="btn btn-primary" data-clipboard-target="#readmeTable">Copy text</button>
                         <a class="btn btn-success" target="_blank" href="https://stackedit.io/app">Test At StackEdit.io</a>
                     </div>
 
@@ -129,6 +130,8 @@
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script> 
+
     <script>
         function myFunction() {
             /* Get the text field */
@@ -143,6 +146,15 @@
             /* Alert the copied text */
             alert("Copied the text: " + copyText.value);
         }
+        
+        var clipboard = new ClipboardJS('.btn');
+
+        clipboard.on('success', function(e) {
+            console.log(e);
+        });
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
     </script>
 
 
